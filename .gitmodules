@@ -1,0 +1,3 @@
+[submodule "postgresql-for-wordpress"]
+	path = postgresql-for-wordpress
+	url = https://github.com/PostgreSQL-For-Wordpress/postgresql-for-wordpress.git
