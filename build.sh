@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t wordpress-postgress-docker .
+docker build -t wordpress-postgresql-docker .
