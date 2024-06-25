@@ -8,7 +8,7 @@ echo "Image version: $WORDPRESS_VERSION"
 if [ "$VOLUME_VERSION" != "$WORDPRESS_VERSION" ];
 then
     echo "Version mismatch, removing index.php..."
-    rm -fv index.php
+    rm -fv index.php wp-includes/version.php
 fi
 
 mkdir -p "wp-content"
