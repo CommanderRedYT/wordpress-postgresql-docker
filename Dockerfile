@@ -19,5 +19,7 @@ RUN apk del .build-deps
 ADD ./postgresql-for-wordpress/pg4wp    /usr/src/wordpress/pg4wp
 ADD ./docker-entrypoint-custom.sh       /usr/local/bin/docker-entrypoint-custom.sh
 
+ENV WORDPRESS_CONFIG_EXTRA "define('AUTOMATIC_UPDATER_DISABLED', true);"
+
 ENTRYPOINT ["docker-entrypoint-custom.sh"]
 CMD ["php-fpm"]
