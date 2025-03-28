@@ -1,4 +1,4 @@
-FROM wordpress:6.7.1-fpm-alpine
+FROM wordpress:6.7.2-fpm-alpine
 
 # Install extra PHP extensions
 RUN apk add --no-cache --virtual .build-deps postgresql-dev

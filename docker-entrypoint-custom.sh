@@ -1,6 +1,6 @@
 #!/bin/sh
 
-WORDPRESS_VERSION="6.7.1"
+WORDPRESS_VERSION="6.7.2"
 VOLUME_VERSION="$(php -r 'require('"'"'wp-includes/version.php'"'"'); echo $wp_version;')"
 echo "Volume version: $VOLUME_VERSION"
 echo "Image version: $WORDPRESS_VERSION"
